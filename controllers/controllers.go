@@ -57,7 +57,7 @@ func mergeLabelsInMetadata(target *metav1.ObjectMeta, desired metav1.ObjectMeta)
 	return mergeMap(target.Labels, desired.Labels)
 }
 
-// mergeAnnotations merges the the annotations specified by the operator into
+// mergeAnnotations merges the annotations specified by the operator into
 // on object's metadata.
 //
 // This will return whether the target's annotations have changed.
